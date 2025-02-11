@@ -13,19 +13,27 @@ function create_table(columns, rows) {
     // Создадим таблицу
     let result = document.createElement('table');  // наш будущий результат
     
-    // Создадим ряд (строку) таблицы TR - Tabnle Row
-    let tr = document.createElement('tr');
+    let tr;
+    let td;
+    for (let rowi = 0; rowi < 10; rowi ++) {
+        // Создадим ряд (строку) таблицы TR - Table Row
+        tr = document.createElement('tr');
+        
+        // прикрепим наш ряд (строку) к таблице
+        result.appendChild(tr);
+        
+        for (let coli = 0; coli < 10; coli ++) {
+            // Создадим ячейку таблицы
+            td = document.createElement('td');
+        
+            // Прикрепляем ячейку к строке
+            tr.appendChild(td);
 
-    // прикрепим наш ряд (строку) к таблице
-    result.appendChild(tr);
+            // текст в ячейке
+            td.textContent = (rowi + 1) * (coli + 1);
+        }
+    }
 
-    // Создадим ячейку таблицы
-    let td = document.createElement('td');
-    
-    // Прикрепляем ячейку к строке
-    tr.appendChild(td);
-    // текст в ячейке
-    td.textContent = 'mew';
     return result;  // вернули результат
 }
 
