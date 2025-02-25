@@ -21,3 +21,10 @@ table {
     height: 80px;
     background-color: gray;
 }
+
+tr {
+    border: 1px dotted black;
+    background-color: white;
+    height: 20px;
+    width: 40px;
+}

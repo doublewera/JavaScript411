@@ -11,6 +11,20 @@ function create_season_table() {
     // Создать элемент
     // Прикрепить элемент к телу страницы
     document.body.appendChild(tbl);
+    const tr = document.createElement('tr');
+    document.body.appendChild(tr);
+    /*
+    <table>  // уже есть
+        <tr>
+            <td>Весна</td>
+            <td>Лето</td>
+        </tr>
+        <tr>
+            <td>Осень</td>
+            <td>Зима</td>
+        </tr>
+     </table>
+    */
 }
 
 window.addEventListener(
