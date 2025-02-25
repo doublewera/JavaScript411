@@ -13,3 +13,11 @@
 .winter {
     background-color: rgb(217, 247, 247);
 }
+
+table {
+    border: 1px solid green;
+    border-radius: 5px;
+    width: 100px;
+    height: 80px;
+    background-color: gray;
+}
