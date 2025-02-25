@@ -11,11 +11,37 @@ function create_season_table() {
     // Создать элемент
     // Прикрепить элемент к телу страницы
     document.body.appendChild(tbl);
-    const tr = document.createElement('tr');
-    document.body.appendChild(tr);
+
+    // Создали строку таблицы (tr) 
+    let tr = document.createElement('tr');
+    // Ссылка на таблицу уже была, мы к таблице прикрепили строку
+    tbl.appendChild(tr);
+    
+    // Создали переменную и первую ячейку
+    let td = document.createElement('td');
+    tr.appendChild(td);
+    td.textContent = "Весна";
+
+    // переменная уже есть, создали вторую ячейку
+    td = document.createElement('td');
+    tr.appendChild(td);
+    td.textContent = "Лето";
+
+    tr = document.createElement('tr');
+    // Ссылка на таблицу уже была, мы к таблице прикрепили строку
+    tbl.appendChild(tr);
+    // Создали переменную и первую ячейку
+    td = document.createElement('td');
+    tr.appendChild(td);
+    td.textContent = "Осень";
+
+    // переменная уже есть, создали вторую ячейку
+    td = document.createElement('td');
+    tr.appendChild(td);
+    td.textContent = "Зима";
     /*
     <table>  // уже есть
-        <tr>
+        <tr>  // уже есть
             <td>Весна</td>
             <td>Лето</td>
         </tr>
