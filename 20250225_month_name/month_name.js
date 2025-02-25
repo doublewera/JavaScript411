@@ -20,7 +20,27 @@ function create_season_table() {
     // Создали переменную и первую ячейку
     let td = document.createElement('td');
     tr.appendChild(td);
-    td.textContent = "Весна";
+    //td.textContent = "Март Апрель май";
+    // делаем список!
+    // Создали элемент
+    let ol = document.createElement('ol');
+    ol.setAttribute("start", "3");
+    // Прикрепили элемент
+    td.appendChild(ol);
+    
+    // Создали элемент списка
+    let li = document.createElement('li');
+    li.textContent = "Март";
+    ol.appendChild(li);
+
+    // Создали ещё один элемент списка
+    li = document.createElement('li');
+    li.textContent = "Апрель";
+    ol.appendChild(li);
+    // 
+    li = document.createElement('li');
+    li.textContent = "Май";
+    ol.appendChild(li);
 
     // переменная уже есть, создали вторую ячейку
     td = document.createElement('td');
