@@ -29,7 +29,15 @@ function create_question() {
     // Создать label, куда вписать эти два числа
     const lbl = document.createElement('label');
     lbl.textContent = a + ' + ' + b + ' = ';
+    // Прикрепила label к форме
     all_tests.appendChild(lbl);
+
     // Создать поле ввода, которое будет связано как-то с этими двумя числами
+    const answer = document.createElement('input');
+    all_tests.appendChild(answer);
+}
+
+function check() {
+    console.log('Проверяем, подождите...');
 }
 

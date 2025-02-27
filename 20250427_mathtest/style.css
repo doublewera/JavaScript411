@@ -4,4 +4,15 @@ form {
     border-radius: 5px;
     width: 70%;
     margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+label {
+    margin: 10px;
+    text-align: right;
+}
+
+input {
+    margin: 10px;
 }
