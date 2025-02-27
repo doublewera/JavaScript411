@@ -34,10 +34,24 @@ function create_question() {
 
     // Создать поле ввода, которое будет связано как-то с этими двумя числами
     const answer = document.createElement('input');
+    answer.setAttribute('type', 'number');
     all_tests.appendChild(answer);
+    answer.setAttribute('id', 'id' + (questions.length - 1))
 }
 
 function check() {
     console.log('Проверяем, подождите...');
+    let myinput;
+    let a;
+    let b;
+    for (let i = 0; i < questions.length; i++) {
+        myinput = document.getElementById('id' + i);
+        [a, b] = questions[i];
+        if ((a + b) == myinput.valueAsNumber) {
+            myinput.style.color="green";
+        } else {
+            myinput.style.color="red";
+        }
+    }
 }
 
